@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        *{
+            margin: 0;
+        }
+        .galeria {
+            height:600px;
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 10vh);
+            gap:55px;
+           
+           
+        }
+
+        .galeria_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .elem1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .elem2 {
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 6;
+        }
+
+        .elem3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 8;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        CSS Grid képgaléria
+    </h1>
+
+    <div class="galeria">
+        <figure class="elem1">
+            <img src="img/neven-krcmarek-2Ni0lCRF9bw-unsplash.jpg" alt="" class="galeria_img">
+        </figure>
+        <figure class="elem2">
+            <img src="img/neven-krcmarek-2Ni0lCRF9bw-unsplash.jpg" alt="" class="galeria_img">
+        </figure>
+        <figure class="elem3">
+            <img src="img/tax-g7e3a5b7af_1920.jpg" alt="" class="galeria_img">
+        </figure>
+        
+
+    </div>
+
+
+</body>
+</html>

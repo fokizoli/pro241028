@@ -1,0 +1,38 @@
+button {
+  color: red;
+}
+
+body {
+  background-color: red;
+}
+
+.nav-links li a {
+  font-weight: bold;
+  font-family: serif;
+}
+
+.pre {
+  background-color: #d69090;
+}
+.pre .pre2 {
+  background-color: #573c3c;
+}
+.pre > p {
+  background-color: #1c0a0a;
+  color: #b5e668;
+}
+
+.col-1 {
+  width: 100px;
+  background-color: #123;
+}
+
+.col-2 {
+  width: 200px;
+  background-color: #123;
+}
+
+.col-3 {
+  width: 300px;
+  background-color: #123;
+}

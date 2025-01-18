@@ -1,0 +1,23 @@
+body {
+    background-color: #f1dede;
+}
+
+.container {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #cfcece;
+    border-radius: 10px;
+}
+
+.valasztas {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.valasztas img, .valasztas div, #gepvalasztkep {
+    width: 100px;
+    height: 100px;
+}
+

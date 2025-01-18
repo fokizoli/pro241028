@@ -1,0 +1,98 @@
+body {
+    background-color: aquamarine;
+}
+
+#container {
+    width: 90%;
+    border: 2px solid red;
+    
+    margin: 0 50px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #cc3030;
+}
+
+header {
+    width: 90%;
+}
+
+#fejlec {
+    margin: 0 auto;
+}
+
+header img {
+    min-width: 250px;
+    width: 250px;
+}
+
+#bal, #jobb {
+    width: 40%;
+    background-color: #c7e866;
+}
+
+#bal {
+    float: right;
+    background-color: #57b94a;
+}
+
+footer {
+    text-align: center;
+    font-size: 2rem;
+}
+
+ul, li {
+    text-decoration: none;
+    display: inline;
+    border: 1px solid blue;
+    padding: 5px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    ul, li {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 970px){
+    header img {
+        min-width: 250px;
+        width: 250px;
+        display: block;
+    }
+    
+}
+
+@media only screen and (min-width:1200px){
+    header img {
+        min-width: 250px;
+        max-width: 850px;
+    }
+
+    #container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:700px) {
+    footer {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #9e8c8c;
+    }
+
+    #bal, #jobb {
+        width: 100%;
+    }
+
+}

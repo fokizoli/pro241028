@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+
+        body {
+            margin: 0;
+        }
+        .container {
+            background-color: #5f5353;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           /*align-items: center;
+            align-content: space-evenly;*/
+
+        }
+
+        .container div {
+            padding: 10px;
+            background-color: #e6b5b5;
+        }
+
+
+        #egy {
+            order: 1;
+            background-color: #fff;
+            align-self:flex-end ;
+        }
+
+        #ketto {
+            align-self: center;
+        }
+
+        #harom {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="egy">Egy</div>
+        <div id="ketto">Kettő</div>
+        <div id="harom">Három</div>
+      
+    </div>
+    
+</body>
+</html>

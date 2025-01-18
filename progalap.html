@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+
+    <button onclick="kattintas()">Kattints</button>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <ul>
+        <li class="lista1"></li>
+        <li class="lista1"></li>
+        <li class="lista1"></li>
+        <li class="lista1"></li>
+        <li class="lista1"></li>
+        <li class="lista1"></li>
+    </ul>
+    <p id="szoveg1"></p>
+    <p id="szoveg2" ></p>
+    <h1 id="szoveg3" onclick="szovegValt()"></h1>
+    <img src="img/neven-krcmarek-2Ni0lCRF9bw-unsplash.jpg" width="250px" id="kep" onclick="valt()" alt="">
+    <hr>
+
+    <h1>Négyzetre emelés 10-100 közötti értékek</h1>
+    <input type="text" id="elem1">
+    <button onclick="negyzetSzamol()">Számol</button>
+    <input type="text" id="negyzetkiiras" readonly>
+    <br><hr>
+
+    <input type="number" id="elsoszam"><br>
+    <input type="number" id="masodikszam"><br>
+
+    <button onclick="osszead()" ondblclick="kivon()">Egy katt összeadás, két katt kivonás</button>
+
+    <p id="clickkiiras"></p>
+
+    <input type="text" id="nev" onchange="csere()"><br>
+
+    <button onmouseover="rahuz()" onmouseout="lehuz()" id="rahuzgomb">Húzd ide az egeret</button>
+    <br>
+    <input type="text" onkeypress="karakter()"><br>
+    <p id="karakterkiir"></p>
+    <script src="main.js"></script>
+</body>
+</html>

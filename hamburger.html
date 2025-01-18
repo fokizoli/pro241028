@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="stylesheet" href="dist/hamburger.css">
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #a39292;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: yellow;
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            
+        }
+
+        .menu-toggle .bar {
+            width: 30px;
+            height: 5px;
+            background-color: #fff;
+            margin: 4px 0;
+        }
+
+        @media screen and (max-width: 600px){
+            .menu-toggle {
+                display: flex;
+                
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top:50px;
+                left: 0;
+                width: 100%;
+                background-color: #a39292;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links li {
+                text-align: center;
+                padding: 5px;
+            }
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Főoldal</a></li>
+            <li><a href="#">Szolgáltatások</a></li>
+            <li><a href="#">Kapcsolat</a></li>
+            <li><a href="#">Rólunk</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="pre">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus dignissimos ad quia quis esse vel neque a obcaecati quo non, praesentium quasi velit debitis quidem dolores, aliquid aspernatur sed adipisci.</p>
+            <div class="pre2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ex adipisci vitae ipsam fuga. Aliquid, in officia! Tempore, ullam temporibus odit ab expedita doloremque fugit quidem, quos neque aliquid eligendi?</div>
+            <button>Gomb</button>
+        </div>
+    </main>
+    <div class="col-1">asdg</div>
+    <div class="col-2">sfghgsfh</div>
+    <div class="col-3">sgnsgfnsghsfhsh</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.getElementById("menu-toggle")
+            const navLinks = document.getElementById("nav-links")
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("show");
+                
+            })
+        })
+    </script>
+</body>
+</html>

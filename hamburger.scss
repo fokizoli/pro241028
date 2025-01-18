@@ -1,0 +1,47 @@
+@import "_modul1";
+
+$szin: red;
+body {
+    background-color: $szin;
+}
+
+.nav-links {
+    li {
+        a {
+            font: {
+                weight: bold;
+                family: serif;
+            }
+        }
+    }
+}
+
+@function setTextColor($color){
+    @if(lightness($color) > 65) {
+        @return #a02020;
+    } @else {
+        @return #b5e668;
+    }
+}
+$hatterszin: #1c0a0a;
+$betuszin: setTextColor($hatterszin);
+
+.pre {
+    background-color: #d69090;
+
+    & .pre2 {
+        background-color: #573c3c;
+    }
+
+    > p {
+        
+        background-color: $hatterszin;    
+        color: $betuszin;
+    }
+}
+
+@for $i from 1 through 3 {
+    .col-#{$i} {width: 100px * $i;
+                background-color: #123;}
+}
+

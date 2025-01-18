@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transzformációk</title>
+    <style>
+        #trans {
+            width: 500px;
+            background-color: #c4e4e0;
+            border: 1px solid blue;
+            transform: translateY(30px);
+        }
+
+        #rot {
+            width: 300px;
+            background-color: #978f8f;
+            transform: rotate(180deg);
+        }
+        #rot3d {
+            width: 300px;
+            background-color: #978f8f;
+            transform: rotateY(180deg);
+        }
+
+        #scale {
+            width: 300px;
+            background-color: #ede0e0;
+            transform: scaleX(2);
+        }
+
+        #skew {
+            width: 350px;
+            background-color: #706b6b;
+            transform: skewY(10deg);
+        }
+
+        #matr {
+            width: 350px;
+            background-color: #bebcbc;
+            /* matrix: scaleX, skewY, skewX, scaleY, translateX, translateY*/
+            transform: matrix(1.5, 0.5, 0, 0.8, 125, 50);
+        }
+
+        #trans1 {
+            width: 200px;
+            border: 1px dashed green;
+            transition-property: width; /* tulajdonág*/
+            transition-duration: 3s; /* hossz sec*/
+            transition-timing-function: ease-in; /* timing*/
+            transition-delay: 3s; /* késleltetés sec*/
+            transition: width 3s ease-in-out 3s, border 4s, transform 3s;
+        }
+
+        #trans1:hover {
+            width: 300px;
+            border: 5px dotted red;
+            transform: scale(1.2);
+            
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+
+    <h3>CSS tranzíciók</h1>
+    <div id="trans1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed similique, aliquid sequi iste exercitationem porro? Minima amet, hic velit debitis tempore accusantium alias consequuntur quos optio, repellendus, omnis voluptatem necessitatibus?
+    </div>
+
+
+    <h1>2D transzformációk</h1>
+
+    <h2>3D rotáció</h2>
+    <div id="rot3d">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+
+    <h2>Rotáció - elforgatás</h2>
+    <div id="rot">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+
+
+    <h2>Transzformációs mátrix</h2>
+    <div id="matr">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+
+    <h2>Skew</h2>
+    <div id="skew">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+    <h2>Scale - nagyítás-kicsinyítés</h2>
+    <div id="scale">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+  
+    <h2>Transzláció - eltolás</h2>
+    <div id="trans">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat obcaecati laudantium ullam nobis architecto vel possimus facere vero eaque tempora, debitis eum, unde, recusandae expedita earum corrupti maiores? Earum, enim!
+    </div>
+
+    
+</body>
+</html>
